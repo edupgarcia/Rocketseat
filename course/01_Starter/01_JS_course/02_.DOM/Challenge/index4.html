@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" name="nome" />
+      <button onClick="adicionar()">Adicionar</button>
+    </div>
+    <script>
+      var ctnElement = document.querySelector('#app');
+      var ulElement = document.createElement('ul');
+      var nomes = ['Diego', 'Gabriel', 'Lucas'];
+
+      for (nome of nomes) {
+        var liElement = document.createElement('li');
+        var txElement = document.createTextNode(nome);
+        liElement.appendChild(txElement);
+        ulElement.appendChild(liElement);
+      }
+
+      ctnElement.appendChild(ulElement);
+
+      function adicionar() {
+        var inpElement = document.querySelector('input');
+
+        if (inpElement.value != '') {
+          var liElement = document.createElement('li');
+          var txElement = document.createTextNode(inpElement.value);
+          liElement.appendChild(txElement);
+          ulElement.appendChild(liElement);
+
+          inpElement.value = '';
+        }
+      }
+    </script>
+  </body>
+</html>

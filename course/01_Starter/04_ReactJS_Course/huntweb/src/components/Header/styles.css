@@ -1,0 +1,17 @@
+header#main-header {
+  height: 60px;
+  width: 100%;
+  background-color: indianred;
+  font-size: 18px;
+  font-weight: bold;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header#main-header a {
+  color: aliceblue;
+  cursor: pointer;
+  text-decoration: none;
+}

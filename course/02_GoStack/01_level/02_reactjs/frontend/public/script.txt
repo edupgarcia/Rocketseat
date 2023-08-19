@@ -1,0 +1,6 @@
+/**
+ * Babel: COnverter (transpilar) código do React para um código que o browser entenda.
+ * Webpack: Pra cada tipo de arquivo (.js, .xss, .png) o código é convertido de uma maneira diferente.
+ *
+ * Loader: babel-loader, css-loader, image-loader
+ */
